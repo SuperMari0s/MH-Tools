@@ -114,7 +114,7 @@ function allDataLoaded() {
   printingFilterParamCheck();
 
   // Check window.name for bookmarklet data
-  if (window.name) {
+  if (window.name && window.name !== "mhsetup") {
     try {
       var basesWeaponsCharms = JSON.parse(window.name);
       if (
